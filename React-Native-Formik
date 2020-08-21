@@ -13,8 +13,9 @@ Sample:
     Step 3: // create a formik form
         <Formik 
             initialValues={{title: '', body: '', rating: ''}}
-            onSubmit={(values)=> {
+            onSubmit={(values, actions)=> {
                 console.log(values);
+                actions.resetForm();
             }}
         >
             {(props)=> (
