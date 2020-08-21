@@ -4,13 +4,13 @@ Docs:
 
 
 Sample:
-    Step 1: 
+    Step 1: // install formik
         npm i formik
 
-    Step 2: 
+    Step 2: // import formik
         import { Formik } from 'formik'
         
-    Step 3: 
+    Step 3: // create a formik form
         <Formik 
             initialValues={{title: '', body: '', rating: ''}}
             onSubmit={(values)=> {
@@ -39,11 +39,16 @@ Sample:
                         placeholder='Rating (1-5)'
                         onChangeText={props.handleChange('rating')}
                         value={props.values.rating}
+                        keyboardType='numeric'
                     />
                     
                     <Button title='submit' color='black' onPress={props.handleSubmit} />
                 </View>
             )}
         </Formik>
-        
+    
+    Step 4: // add some styles to input
+        input: {
+            
+        }
         
