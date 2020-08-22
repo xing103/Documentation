@@ -59,7 +59,7 @@
                 placeholder='Review body'
                 onChangeText={props.handleChange('body')}
                 value={props.values.body}
-                onBlur={props.handleBlur('title')}
+                onBlur={props.handleBlur('body')}
             />
             <Text>{props.touched.body && props.errors.body}</Text>
 
@@ -68,7 +68,7 @@
                 placeholder='Rating (1-5)'
                 onChangeText={props.handleChange('rating')}
                 value={props.values.rating}
-                onBlur={props.handleBlur('title')}
+                onBlur={props.handleBlur('rating')}
                 // 使用数字键盘
                 keyboardType='numeric'
             />
