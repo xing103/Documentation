@@ -3,7 +3,6 @@
         学习的最佳方式：把重要的知识点归纳并集中在一起，集中复习，省去大量时间去查找相关资料
         web-icons: https://oblador.github.io/react-native-vector-icons/
         先登陆该网站，寻找所需要的图片，然后再引入所需要的图片
-        web-docs: https://docs.expo.io/guides/icons/
 
     Steps:
         1. import { Ionicons } from '@expo/vector-icons'; 
