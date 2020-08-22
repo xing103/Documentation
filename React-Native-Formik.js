@@ -4,25 +4,35 @@
         web: https://www.npmjs.com/package/formik
 
     Steps:
-        Step 1: npm i formik
+        Step 1: npm i formik yup
         
-        Step 2: import { Formik } from 'formik'
-        
+        Step 2: 
+            import { Formik } from 'formik';
+            import * as yup from 'yup';
         Step 3: create a formik form
         
         Step 4: add some styles to input
-        input: {
-            
-        }
+            input: {
+                
+            }
+        Step 5: define schema
+            const reviewSchema = yup.object({
+                title: yup.string().required().min(4),
+                body: yup.string().required().min(8),
+                rating: yup.string().required().test('is-num-1-5', 'Rating must be a number 1 -5', (val) => {
+                    return parseInt(val) < 6 && parseInt(val) > 0
+                })
+            })
 */
 <Formik 
     // 初始化数据
     initialValues={{title: '', body: '', rating: ''}}
+    // 验证
+    validationSchema={reviewSchema}
     // 当用户提交数据时
     onSubmit={(values, actions)=> {
         // values 修改后的数据
         // actions formik提供的对象，包含的一些方法 
-        console.log(values);
         // 重置数据
         actions.resetForm();
     }}
