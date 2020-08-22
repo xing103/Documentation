@@ -40,31 +40,40 @@
     {/* props对象，包含了一堆方法和属性供使用 */}
     {(props)=> (
         <View>
+
             <TextInput 
                 style={globalStyles.input}
                 placeholder='Review title'
                 // 更新title
                 onChangeText={props.handleChange('title')}
                 value={props.values.title}
+                // 实时判断，当输入完成，离开焦点马上判断
+                onBlur={props.handleBlur('title')}
             />
-            
+            {/* 当输入后提交才判断是否验证成功 */}
+            <Text>{props.touched.title && props.errors.title}</Text>
+
             <TextInput 
                 multiline
                 style={globalStyles.input}
                 placeholder='Review body'
                 onChangeText={props.handleChange('body')}
                 value={props.values.body}
+                onBlur={props.handleBlur('title')}
             />
-            
+            <Text>{props.touched.body && props.errors.body}</Text>
+
             <TextInput 
                 style={globalStyles.input}
                 placeholder='Rating (1-5)'
                 onChangeText={props.handleChange('rating')}
                 value={props.values.rating}
+                onBlur={props.handleBlur('title')}
                 // 使用数字键盘
                 keyboardType='numeric'
             />
-            
+            <Text>{props.touched.rating && props.errors.rating}</Text>
+
             <Button title='submit' color='black' onPress={props.handleSubmit} />
         </View>
     )}
