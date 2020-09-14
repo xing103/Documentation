@@ -6,3 +6,7 @@
         //有时候图片变大太快太突然，我们可以选择慢点,给图片设置，不是给hover设置
         transition: all ease 500ms;
         
+2. 让数据垂直居中显示
+        //设置同等高度
+        height: 50px;
+        line-height: 50px;
