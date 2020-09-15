@@ -10,3 +10,7 @@
         //设置同等高度
         height: 50px;
         line-height: 50px;
+
+3. 鼠标移入到DIV上后显示整个DIV的边框
+        //使用Outline比较好,在DIV最外层添加个边框不改变原来尺寸
+        outline: 1px solid black;
