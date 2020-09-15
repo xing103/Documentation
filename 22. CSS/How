@@ -14,3 +14,16 @@
 3. 鼠标移入到DIV上后显示整个DIV的边框
         //使用Outline比较好,在DIV最外层添加个边框不改变原来尺寸
         outline: 1px solid black;
+        
+4. 在导航栏中，鼠标移入时候显示下方信息
+        //给父元素添加hover样式，并让子元素显示
+        .parent:hover .child {
+                display: block;
+        }
+    
+5. 漂亮的阴影
+        //参数1 设置左右
+        //参数2 设置上下
+        //参数3 设置阴影厚度
+        //参数4 设置颜色
+        box-shadow: 0 2 10px rgba(0, 0, 0, .2)
