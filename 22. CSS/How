@@ -27,3 +27,6 @@
         //参数3 设置阴影厚度
         //参数4 设置颜色
         box-shadow: 0 0 5px rgb(179, 176, 176);
+
+6. 如何覆盖css元素
+        color: red !important
