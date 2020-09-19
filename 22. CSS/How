@@ -28,5 +28,10 @@
         //参数4 设置颜色
         box-shadow: 0 0 5px rgb(179, 176, 176);
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        
 6. 如何覆盖css元素
         color: red !important
+
+7. 设置渐进颜色
+        //syntax linear-gradient(gradient_direction, color_1, color_2, ...);
+        background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));
