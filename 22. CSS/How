@@ -35,3 +35,11 @@
 7. 设置渐进颜色
         //syntax linear-gradient(gradient_direction, color_1, color_2, ...);
         background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));
+        
+8. 漂亮的背景
+        background: url('https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png');
+   
+9. 变形
+        skewX(15deg); //左右变形15度
+        skewY(15deg); //上下变形15度
+        
