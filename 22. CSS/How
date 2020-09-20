@@ -52,3 +52,5 @@
 12. Made img responsive
         max-width: 100%;
         height: auto;
+
+13. px, em, vw, vh, vmin, vmax definition
