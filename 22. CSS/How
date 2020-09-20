@@ -44,3 +44,7 @@
         skewY(15deg); //上下变形15度
         
 10. 动画效果 keyframe 需要练习
+
+11. tabindex
+        tabindex = '0' //当我们按键盘上的tab时候能够移动到上面
+        tabindex = '-1' //无法通过键盘上的tab键移动到上面
