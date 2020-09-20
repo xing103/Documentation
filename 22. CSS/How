@@ -48,3 +48,7 @@
 11. tabindex
         tabindex = '0' //当我们按键盘上的tab时候能够移动到上面
         tabindex = '-1' //无法通过键盘上的tab键移动到上面
+
+12. Made img responsive
+        max-width: 100%;
+        height: auto;
