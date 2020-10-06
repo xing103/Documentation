@@ -9,6 +9,7 @@ Symbol
     /[abc]/ find all strings incude a or b or c
     /b[abc]g/ find all strings starting with b and ending with g and a or b or c between
     /[a-z]/ find all strings include a to z, that's 26 letters
+    /[a-z0-9]/ig match all letters and all numbers
 1. 如何测试字符串 .test()
     let testStr = "freeCodeCamp";
     / / 里面的是你要查找的数据
