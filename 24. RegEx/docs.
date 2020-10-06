@@ -1,0 +1,6 @@
+1. 如何测试字符串
+    let testStr = "freeCodeCamp";
+    / / 里面的是你要查找的数据
+    let testRegex = /Code/;
+    //通过test方法查找
+    testRegex.test(testStr);
