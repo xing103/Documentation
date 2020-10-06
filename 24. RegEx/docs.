@@ -6,8 +6,8 @@ Syntax
 Symbol
     . wildcard /hell./ it will match all the words starting with hell
     /[a]/ find all strings incude a
-    /[a,b,c]/ find all strings incude a or b or c
-    /b[a,b,c]g/ find all strings starting with b and ending with g and a or b or c between
+    /[abc]/ find all strings incude a or b or c
+    /b[abc]g/ find all strings starting with b and ending with g and a or b or c between
     /[a-z]/ find all strings include a to z, that's 26 letters
 1. 如何测试字符串 .test()
     let testStr = "freeCodeCamp";
