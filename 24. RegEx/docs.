@@ -1,6 +1,24 @@
-1. 如何测试字符串
+Syntax
+    /pattern/flag
+    pattern = 'string you try to find'
+    flag = [i = ignoreCase, g = global]
+    
+Symbol
+    . wildcard /hell./ it will match all the words starting with hell
+    /[a]/ find all strings incude a
+    /[a,b,c]/ find all strings incude a or b or c
+    /b[a,b,c]g/ find all strings starting with b and ending with g and a or b or c between
+    /[a-z]/ find all strings include a to z, that's 26 letters
+1. 如何测试字符串 .test()
     let testStr = "freeCodeCamp";
     / / 里面的是你要查找的数据
     let testRegex = /Code/;
     //通过test方法查找
     testRegex.test(testStr);
+    
+2. 如何测试字符串 .match()
+    To use the .match() method, apply the method on a string and pass in the regex inside the parentheses.
+    let ourStr = "Regular expressions";
+    let ourRegex = /expressions/;
+    ourStr.match(ourRegex);
+    // Returns ["expressions"]
