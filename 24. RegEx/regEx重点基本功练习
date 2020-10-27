@@ -2,6 +2,7 @@
         regEx.test(string);
         
 2. | 的使用
+        /yes|no|maybe/;
         
 3. /hello/i 中的i的使用
 
