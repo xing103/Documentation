@@ -28,3 +28,13 @@
 12. /a+/g 的+的理解
         
 13. /go*/ 的*的理解
+
+14. greedy match
+        /t[a-z]*i/
+        longest possible part of a string which is by default
+
+15. lazy match
+        /t[a-z]*?i/
+        the smallest possible part of the string which using ? behind
+
+16. 
