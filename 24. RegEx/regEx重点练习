@@ -1,11 +1,18 @@
 1. 如何使用test()方法
-    
+        regEx.test(string);
+        
 2. | 的使用
-
+        
 3. /hello/i 中的i的使用
 
 4. /hello/g 中的g的使用
 
 5. match() 的使用
-
+        string.match(regEx);
+        
 6. Wildcard period . 的使用
+
+7. square bracket [] 的使用
+        b[aiu]g
+        
+8. 
