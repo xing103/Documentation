@@ -31,10 +31,12 @@
 
 14. greedy match
         /t[a-z]*i/
-        longest possible part of a string which is by default
 
 15. lazy match
         /t[a-z]*?i/
-        the smallest possible part of the string which using ? behind
 
-16. 
+16. /^Ricky/ 的^的理解
+
+17. /story$/ 的$的理解
+        
+18. /\w/ 的理解
