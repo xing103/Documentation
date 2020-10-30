@@ -59,4 +59,10 @@
 
 27. /colou?r/ 的? 的理解
 
-28. 
+28. positive lookahead (?=...)
+        (?=\w{3,6})(?=\D*\d)
+        
+29. negetive lookahead (?!...)
+        (?!u)
+30. /P(engu|umpk)in/ 的理解
+
