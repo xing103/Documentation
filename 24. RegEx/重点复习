@@ -64,5 +64,11 @@
         
 29. negetive lookahead (?!...)
         (?!u)
-30. /P(engu|umpk)in/ 的理解
+30. /P(engu|umpk)in/ mixed Grouping of CharactersPassed的理解
 
+31. Capture Groups
+        /(\w+)\s\1/
+        /^(\d+)\s\1\s\1$/
+32. "Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1'); 的理解
+
+33. 
